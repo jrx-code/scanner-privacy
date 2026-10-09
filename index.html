@@ -12,23 +12,18 @@
 </head>
 <body>
 <h1>Privacy Policy — Skaner</h1>
-<p class="muted">Application ID: <code>eu.iwanus.scanner</code> · Last updated: 2 June 2026</p>
+<p class="muted">Application ID: <code>eu.iwanus.scanner</code> · Last updated: 10 October 2026</p>
 
 <p><strong>Skaner</strong> is a private, self-hosted utility that lets its owner operate a network document scanner through their own private backend server (reachable only over the owner's LAN/VPN). The app is distributed via Google Play <em>internal testing</em> for the operator's own use.</p>
 
 <h2>Data we collect</h2>
-<p><strong>None.</strong> The app does not collect, transmit to us, or share any personal data. It contains no analytics, no advertising, no tracking, and no third-party SDKs.</p>
+<p><strong>None.</strong> The app does not collect, transmit to us, or share any personal data. It contains no analytics, no advertising, no tracking, and no third-party libraries that collect data.</p>
 
 <h2>Data stored on the device</h2>
-<p>The app stores, only on your device in encrypted app-private storage (Android <code>EncryptedSharedPreferences</code>), the two settings you enter yourself:</p>
-<ul>
-  <li>the address of <em>your</em> backend server (e.g. <code>https://scan.example.com</code>);</li>
-  <li>your personal access token for that server.</li>
-</ul>
-<p>These never leave your device except as the <code>Authorization</code> header sent to <em>your own</em> server. Uninstalling the app removes them.</p>
+<p>The backend server address and the access tokens are built into the app; you do not enter them. The only setting the app saves is your answer to <em>“Czyj to telefon?”</em> (whose phone this is), stored only on your device in encrypted app-private storage (Android <code>EncryptedSharedPreferences</code>). Uninstalling the app removes it.</p>
 
 <h2>Network access</h2>
-<p>The app communicates only with the backend server address you configure. Scans, OCR and any document processing happen on <em>your</em> server — not on any server operated by the developer and not shared with any third party. The developer has no access to the documents you scan.</p>
+<p>The app communicates only with the owner's backend server, whose address is built into the app. Scans, OCR and any document processing happen on <em>your</em> server — not on any server operated by the developer and not shared with any third party. The developer has no access to the documents you scan.</p>
 
 <h2>Permissions</h2>
 <p>The app requests only <code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code>. It does not use the camera, location, contacts, storage, or any other sensitive permission.</p>
@@ -46,11 +41,11 @@
 <h1>Polityka prywatności — Skaner</h1>
 <p><strong>Skaner</strong> to prywatne, self-hostowane narzędzie pozwalające właścicielowi obsługiwać sieciowy skaner dokumentów przez własny serwer backendowy (dostępny tylko w jego sieci LAN/VPN).</p>
 <h2>Jakie dane zbieramy</h2>
-<p><strong>Żadnych.</strong> Aplikacja nie zbiera, nie wysyła do nas ani nie udostępnia żadnych danych osobowych. Brak analityki, reklam, śledzenia i bibliotek third-party.</p>
+<p><strong>Żadnych.</strong> Aplikacja nie zbiera, nie wysyła do nas ani nie udostępnia żadnych danych osobowych. Brak analityki, reklam, śledzenia i zewnętrznych bibliotek zbierających dane.</p>
 <h2>Dane na urządzeniu</h2>
-<p>Aplikacja przechowuje wyłącznie na Twoim urządzeniu, w zaszyfrowanej pamięci prywatnej aplikacji, dwa wprowadzone przez Ciebie ustawienia: adres Twojego serwera oraz Twój token dostępu. Nie opuszczają one urządzenia poza nagłówkiem <code>Authorization</code> wysyłanym do Twojego własnego serwera. Odinstalowanie aplikacji je usuwa.</p>
+<p>Adres serwera i tokeny dostępu są wbudowane w aplikację; nie wpisujesz ich. Jedynym zapisywanym ustawieniem jest odpowiedź na pytanie <em>„Czyj to telefon?”</em>, przechowywana wyłącznie na Twoim urządzeniu, w zaszyfrowanej pamięci prywatnej aplikacji (Android <code>EncryptedSharedPreferences</code>). Odinstalowanie aplikacji je usuwa.</p>
 <h2>Dostęp do sieci</h2>
-<p>Aplikacja łączy się wyłącznie z adresem serwera, który skonfigurujesz. Skanowanie, OCR i przetwarzanie dokumentów odbywa się na Twoim serwerze — nie na serwerze dewelopera i nie jest udostępniane stronom trzecim.</p>
+<p>Aplikacja łączy się wyłącznie z serwerem właściciela, którego adres jest wbudowany w aplikację. Skanowanie, OCR i przetwarzanie dokumentów odbywa się na Twoim serwerze — nie na serwerze dewelopera i nie jest udostępniane stronom trzecim.</p>
 <h2>Uprawnienia</h2>
 <p>Aplikacja prosi tylko o <code>INTERNET</code> i <code>ACCESS_NETWORK_STATE</code>. Nie używa aparatu, lokalizacji, kontaktów ani pamięci.</p>
 <h2>Kontakt</h2>
