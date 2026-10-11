@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — Skaner (eu.iwanus.scanner)</title>
+<title>Privacy Policy: JI Scanner (eu.iwanus.scanner)</title>
 <style>
  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:760px;margin:2rem auto;padding:0 1rem;line-height:1.6;color:#1a1a1a}
  h1{font-size:1.6rem} h2{font-size:1.15rem;margin-top:2rem} code{background:#f0f0f0;padding:.1rem .3rem;border-radius:4px}
@@ -11,49 +11,64 @@
 </style>
 </head>
 <body>
-<h1>Privacy Policy — Skaner</h1>
-<p class="muted">Application ID: <code>eu.iwanus.scanner</code> · Last updated: 2 June 2026</p>
+<h1>Privacy Policy: JI Scanner</h1>
+<p class="muted">Application ID: <code>eu.iwanus.scanner</code> · Last updated: 11 October 2026 · Earlier name: Skaner</p>
 
-<p><strong>Skaner</strong> is a private, self-hosted utility that lets its owner operate a network document scanner through their own private backend server (reachable only over the owner's LAN/VPN). The app is distributed via Google Play <em>internal testing</em> for the operator's own use.</p>
+<p><strong>Developer:</strong> JI ENGINEERING (Google Play developer account “JI Engineering”), contact <a href="mailto:engineering@iwanus.eu">engineering@iwanus.eu</a>.</p>
 
-<h2>Data we collect</h2>
-<p><strong>None.</strong> The app does not collect, transmit to us, or share any personal data. It contains no analytics, no advertising, no tracking, and no third-party SDKs.</p>
+<p>JI Scanner is a private, self-hosted utility. Its owner, who is also the developer, uses it to operate a network document scanner through the owner's own scanning server, reachable on the owner's local network or VPN. The app is distributed through Google Play testing tracks to the owner and the people the owner gives access to.</p>
 
-<h2>Data stored on the device</h2>
-<p>The app stores, only on your device in encrypted app-private storage (Android <code>EncryptedSharedPreferences</code>), the two settings you enter yourself:</p>
+<h2>What data the app processes and where it goes</h2>
 <ul>
-  <li>the address of <em>your</em> backend server (e.g. <code>https://scan.example.com</code>);</li>
-  <li>your personal access token for that server.</li>
+ <li><strong>Scan requests</strong> (chosen scanner, scan action, OCR and AI switches) and the profile's <strong>access token</strong> are sent to the owner's scanning server.</li>
+ <li>The server returns <strong>progress, previews and results</strong> (recognised text and fields such as title, date, amount, counterparty).</li>
+ <li>The <strong>scanned documents</strong> are created on the server by the network scanner; the app shows previews of them but does not upload files from the phone.</li>
 </ul>
-<p>These never leave your device except as the <code>Authorization</code> header sent to <em>your own</em> server. Uninstalling the app removes them.</p>
+<p>The server is operated by the owner (the developer) solely to provide this function. The data is not sold, not used for advertising and not shared with third parties. The app contains no analytics, advertising or tracking SDK; it uses the open-source libraries OkHttp and Gson.</p>
 
-<h2>Network access</h2>
-<p>The app communicates only with the backend server address you configure. Scans, OCR and any document processing happen on <em>your</em> server — not on any server operated by the developer and not shared with any third party. The developer has no access to the documents you scan.</p>
+<h2>What the owner's server does with it</h2>
+<p>The server files documents only in the owner's own services: document archive (Paperless), Nextcloud, BookStack wiki and Nextcloud Cookbook, and analyses them with AI models running on the owner's own hardware. One request leaves the owner's systems: for the cookbook action, when a recipe has no usable photo, the server searches DuckDuckGo images by the <strong>dish name</strong> only and downloads the chosen picture; no document, image or personal data is sent with it.</p>
+
+<h2>Retention and deletion</h2>
+<p>On the phone the app keeps one setting in encrypted app-private storage (Android EncryptedSharedPreferences): which profile the phone belongs to. Uninstalling the app removes it. On the server, documents are kept where the scan action files them (the owner's document folders, wiki or cookbook) until the owner deletes them. Server request logs and the owner's backups contain the same data and rotate out on the owner's log and backup schedule; a deletion request covers them too. To ask for deletion of your documents or of your access, write to the contact address above.</p>
+
+<h2>Security</h2>
+<p>All traffic between the app and the server uses HTTPS. The access token is stored only inside the app.</p>
 
 <h2>Permissions</h2>
-<p>The app requests only <code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code>. It does not use the camera, location, contacts, storage, or any other sensitive permission.</p>
+<p>Only <code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code>. No camera, location, contacts, storage or other sensitive permission.</p>
 
 <h2>Children</h2>
-<p>The app is a private operator tool and is not directed at children.</p>
+<p>The app is an operator tool and is not directed at children.</p>
 
 <h2>Changes</h2>
-<p>If this policy changes, the updated version will be published at this URL.</p>
-
-<h2>Contact</h2>
-<p>JI ENGINEERING — <a href="mailto:engineering@iwanus.eu">engineering@iwanus.eu</a></p>
+<p>An updated policy will be published at this URL with a new date.</p>
 
 <hr>
-<h1>Polityka prywatności — Skaner</h1>
-<p><strong>Skaner</strong> to prywatne, self-hostowane narzędzie pozwalające właścicielowi obsługiwać sieciowy skaner dokumentów przez własny serwer backendowy (dostępny tylko w jego sieci LAN/VPN).</p>
-<h2>Jakie dane zbieramy</h2>
-<p><strong>Żadnych.</strong> Aplikacja nie zbiera, nie wysyła do nas ani nie udostępnia żadnych danych osobowych. Brak analityki, reklam, śledzenia i bibliotek third-party.</p>
-<h2>Dane na urządzeniu</h2>
-<p>Aplikacja przechowuje wyłącznie na Twoim urządzeniu, w zaszyfrowanej pamięci prywatnej aplikacji, dwa wprowadzone przez Ciebie ustawienia: adres Twojego serwera oraz Twój token dostępu. Nie opuszczają one urządzenia poza nagłówkiem <code>Authorization</code> wysyłanym do Twojego własnego serwera. Odinstalowanie aplikacji je usuwa.</p>
-<h2>Dostęp do sieci</h2>
-<p>Aplikacja łączy się wyłącznie z adresem serwera, który skonfigurujesz. Skanowanie, OCR i przetwarzanie dokumentów odbywa się na Twoim serwerze — nie na serwerze dewelopera i nie jest udostępniane stronom trzecim.</p>
+
+<div lang="pl">
+<h1>Polityka prywatności: JI Scanner</h1>
+<p><strong>Twórca:</strong> JI ENGINEERING (konto dewelopera Google Play „JI Engineering”), kontakt <a href="mailto:engineering@iwanus.eu">engineering@iwanus.eu</a>.</p>
+<p>JI Scanner to prywatne, self-hostowane narzędzie. Właściciel, który jest też twórcą aplikacji, obsługuje nim sieciowy skaner dokumentów przez własny serwer skanowania, dostępny w jego sieci lokalnej lub przez VPN. Aplikacja jest udostępniana przez ścieżki testowe Google Play właścicielowi i osobom, którym właściciel dał dostęp.</p>
+<h2>Jakie dane aplikacja przetwarza i dokąd trafiają</h2>
+<ul>
+ <li><strong>Polecenia skanowania</strong> (skaner, akcja, przełączniki OCR i AI) oraz <strong>token dostępu</strong> profilu trafiają na serwer skanowania właściciela.</li>
+ <li>Serwer odsyła <strong>postęp, podglądy i wyniki</strong> (odczytany tekst i pola, np. tytuł, data, kwota, kontrahent).</li>
+ <li><strong>Skanowane dokumenty</strong> powstają na serwerze, w skanerze sieciowym; aplikacja pokazuje ich podglądy, ale nie wysyła plików z telefonu.</li>
+</ul>
+<p>Serwer prowadzi właściciel (twórca) wyłącznie w celu działania tej funkcji. Dane nie są sprzedawane, nie służą do reklam i nie są udostępniane osobom trzecim. Aplikacja nie zawiera bibliotek analitycznych, reklamowych ani śledzących; korzysta z bibliotek open source OkHttp i Gson.</p>
+<h2>Co z danymi robi serwer właściciela</h2>
+<p>Serwer zapisuje dokumenty wyłącznie we własnych usługach właściciela: archiwum dokumentów (Paperless), Nextcloud, wiki BookStack i Nextcloud Cookbook, a analizuje je modelami AI działającymi na sprzęcie właściciela. Poza systemy właściciela wychodzi jedno zapytanie: przy akcji „Cookbook”, gdy przepis nie ma użytecznego zdjęcia, serwer szuka obrazu w DuckDuckGo wyłącznie po <strong>nazwie dania</strong> i pobiera wybrane zdjęcie; nie wysyła przy tym żadnego dokumentu, obrazu ani danych osobowych.</p>
+<h2>Przechowywanie i usuwanie</h2>
+<p>Na telefonie aplikacja trzyma jedno ustawienie w zaszyfrowanej pamięci prywatnej: do którego profilu należy telefon. Odinstalowanie aplikacji je usuwa. Na serwerze dokumenty leżą tam, gdzie zapisała je akcja skanowania (katalogi dokumentów właściciela, wiki, książka kucharska), dopóki właściciel ich nie usunie. Logi zapytań serwera i kopie zapasowe właściciela zawierają te same dane i wygasają zgodnie z jego harmonogramem logów i kopii; prośba o usunięcie obejmuje także je. O usunięcie dokumentów lub dostępu można poprosić pod adresem kontaktowym.</p>
+<h2>Bezpieczeństwo</h2>
+<p>Cała komunikacja aplikacji z serwerem odbywa się przez HTTPS. Token dostępu jest przechowywany tylko w aplikacji.</p>
 <h2>Uprawnienia</h2>
-<p>Aplikacja prosi tylko o <code>INTERNET</code> i <code>ACCESS_NETWORK_STATE</code>. Nie używa aparatu, lokalizacji, kontaktów ani pamięci.</p>
-<h2>Kontakt</h2>
-<p>JI ENGINEERING — <a href="mailto:engineering@iwanus.eu">engineering@iwanus.eu</a></p>
+<p>Tylko <code>INTERNET</code> i <code>ACCESS_NETWORK_STATE</code>.</p>
+<h2>Dzieci</h2>
+<p>Aplikacja jest narzędziem operatora i nie jest skierowana do dzieci.</p>
+<h2>Zmiany</h2>
+<p>Zaktualizowana polityka zostanie opublikowana pod tym adresem, z nową datą.</p>
+</div>
 </body>
 </html>
